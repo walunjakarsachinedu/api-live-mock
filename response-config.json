@@ -1,0 +1,25 @@
+{
+  "path": "/",
+  "method": "GET",
+  "status": 201,
+  "body": {
+    "message": "roots"
+  },
+  "headers": {
+    "X-Root": "yes"
+  },
+  "child": {
+    "path": "custom",
+    "method": "POST",
+    "status": 201,
+    "body": {
+      "message": "custom nested"
+    },
+    "child": {
+      "path": "data",
+      "body": {
+        "message": "hello world !!!"
+      }
+    }
+  }
+}
